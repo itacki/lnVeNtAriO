@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace iNvEnTaRiO
 {
-    public partial class Form1 : Form
+    public partial class Base : Form
     {
-        public Form1()
+        public Base()
         {
             InitializeComponent();
         }
