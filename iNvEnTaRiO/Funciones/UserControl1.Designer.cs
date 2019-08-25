@@ -1,6 +1,6 @@
-﻿namespace iNvEnTaRiO
+﻿namespace Funciones
 {
-    partial class Base
+    partial class UserControl1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Código generado por el Diseñador de componentes
 
         /// <summary>
         /// Método necesario para admitir el Diseñador. No se puede modificar
@@ -28,23 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Base
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.IsMdiContainer = true;
-            this.Name = "Base";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
         }
 
         #endregion
     }
 }
-

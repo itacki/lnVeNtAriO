@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace iNvEnTaRiO
+namespace Funciones
 {
-    public partial class Base : Form
+    public partial class UserControl1: UserControl
     {
-        public Base()
+        public UserControl1()
         {
             InitializeComponent();
         }
