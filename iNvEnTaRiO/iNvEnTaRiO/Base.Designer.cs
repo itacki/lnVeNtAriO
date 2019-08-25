@@ -32,12 +32,10 @@
             this.Cerrar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.Maximo = new System.Windows.Forms.PictureBox();
-            this.Contenedor = new System.Windows.Forms.Panel();
             this.Regreso = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximo)).BeginInit();
-            this.Contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Regreso)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +44,7 @@
             this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
-            this.Cerrar.Location = new System.Drawing.Point(892, 195);
+            this.Cerrar.Location = new System.Drawing.Point(960, 3);
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.Size = new System.Drawing.Size(40, 40);
             this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -56,8 +54,9 @@
             // 
             // Minimizar
             // 
+            this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(613, 20);
+            this.Minimizar.Location = new System.Drawing.Point(874, 3);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(40, 40);
             this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -67,8 +66,9 @@
             // 
             // Maximo
             // 
+            this.Maximo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Maximo.Image = ((System.Drawing.Image)(resources.GetObject("Maximo.Image")));
-            this.Maximo.Location = new System.Drawing.Point(701, 44);
+            this.Maximo.Location = new System.Drawing.Point(917, 3);
             this.Maximo.Name = "Maximo";
             this.Maximo.Size = new System.Drawing.Size(40, 40);
             this.Maximo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -76,26 +76,18 @@
             this.Maximo.TabStop = false;
             this.Maximo.Click += new System.EventHandler(this.Maximo_Click);
             // 
-            // Contenedor
-            // 
-            this.Contenedor.Controls.Add(this.Minimizar);
-            this.Contenedor.Controls.Add(this.Regreso);
-            this.Contenedor.Controls.Add(this.Maximo);
-            this.Contenedor.Location = new System.Drawing.Point(0, 3);
-            this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(1000, 103);
-            this.Contenedor.TabIndex = 4;
-            // 
             // Regreso
             // 
+            this.Regreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Regreso.Image = ((System.Drawing.Image)(resources.GetObject("Regreso.Image")));
-            this.Regreso.Location = new System.Drawing.Point(782, 63);
+            this.Regreso.Location = new System.Drawing.Point(917, 3);
             this.Regreso.Margin = new System.Windows.Forms.Padding(0);
             this.Regreso.Name = "Regreso";
             this.Regreso.Size = new System.Drawing.Size(40, 40);
             this.Regreso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Regreso.TabIndex = 2;
             this.Regreso.TabStop = false;
+            this.Regreso.Visible = false;
             this.Regreso.Click += new System.EventHandler(this.Regreso_Click);
             // 
             // Base
@@ -104,7 +96,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
-            this.Controls.Add(this.Contenedor);
+            this.Controls.Add(this.Minimizar);
+            this.Controls.Add(this.Maximo);
+            this.Controls.Add(this.Regreso);
             this.Controls.Add(this.Cerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Base";
@@ -114,7 +108,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximo)).EndInit();
-            this.Contenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Regreso)).EndInit();
             this.ResumeLayout(false);
 
@@ -125,7 +118,6 @@
         private System.Windows.Forms.PictureBox Cerrar;
         private System.Windows.Forms.PictureBox Minimizar;
         private System.Windows.Forms.PictureBox Maximo;
-        private System.Windows.Forms.Panel Contenedor;
         private System.Windows.Forms.PictureBox Regreso;
     }
 }

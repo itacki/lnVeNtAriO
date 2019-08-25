@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FuNcIoNeSPY;
 
 namespace iNvEnTaRiO
 {
@@ -15,7 +16,6 @@ namespace iNvEnTaRiO
 
         int posX = 0;
         int posY = 0;
-
         funciones Herramientas = new funciones();
         public Base()
         {
@@ -24,7 +24,7 @@ namespace iNvEnTaRiO
 
         private void Cerrar_Click(object sender, EventArgs e)
         {
-            Herramientas.Cerrar();
+            Application.Exit();
         }
 
         private void Base_MouseMove(object sender, MouseEventArgs e)
@@ -47,10 +47,14 @@ namespace iNvEnTaRiO
         private void Maximo_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            Maximo.Visible = false;
+            Regreso.Visible = true;
         }
         private void Regreso_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
+            Maximo.Visible = true;
+            Regreso.Visible = false;
         }
     }
 }
