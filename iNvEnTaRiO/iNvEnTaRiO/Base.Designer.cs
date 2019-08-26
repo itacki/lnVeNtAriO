@@ -29,25 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Base));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Cerrar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
-            this.Maximo = new System.Windows.Forms.PictureBox();
-            this.Regreso = new System.Windows.Forms.PictureBox();
             this.PanelVisual = new System.Windows.Forms.DataGridView();
             this.Nombre = new System.Windows.Forms.Label();
             this.Consultar = new System.Windows.Forms.Button();
             this.Buscador = new System.Windows.Forms.TextBox();
             this.Texto = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Regreso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelVisual)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +70,7 @@
             // 
             this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(874, 3);
+            this.Minimizar.Location = new System.Drawing.Point(914, 3);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(40, 40);
             this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -76,97 +78,69 @@
             this.Minimizar.TabStop = false;
             this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
             // 
-            // Maximo
-            // 
-            this.Maximo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Maximo.Image = ((System.Drawing.Image)(resources.GetObject("Maximo.Image")));
-            this.Maximo.Location = new System.Drawing.Point(917, 3);
-            this.Maximo.Name = "Maximo";
-            this.Maximo.Size = new System.Drawing.Size(40, 40);
-            this.Maximo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Maximo.TabIndex = 3;
-            this.Maximo.TabStop = false;
-            this.Maximo.Click += new System.EventHandler(this.Maximo_Click);
-            // 
-            // Regreso
-            // 
-            this.Regreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Regreso.Image = ((System.Drawing.Image)(resources.GetObject("Regreso.Image")));
-            this.Regreso.Location = new System.Drawing.Point(917, 3);
-            this.Regreso.Margin = new System.Windows.Forms.Padding(0);
-            this.Regreso.Name = "Regreso";
-            this.Regreso.Size = new System.Drawing.Size(40, 40);
-            this.Regreso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Regreso.TabIndex = 2;
-            this.Regreso.TabStop = false;
-            this.Regreso.Visible = false;
-            this.Regreso.Click += new System.EventHandler(this.Regreso_Click);
-            // 
             // PanelVisual
             // 
             this.PanelVisual.AllowUserToAddRows = false;
             this.PanelVisual.AllowUserToDeleteRows = false;
             this.PanelVisual.AllowUserToResizeColumns = false;
             this.PanelVisual.AllowUserToResizeRows = false;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.White;
-            this.PanelVisual.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle36;
-            this.PanelVisual.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
+            this.PanelVisual.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.PanelVisual.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.PanelVisual.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.PanelVisual.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(64)))));
             this.PanelVisual.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.PanelVisual.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PanelVisual.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PanelVisual.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.PanelVisual.ColumnHeadersHeight = 30;
             this.PanelVisual.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PanelVisual.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PanelVisual.DefaultCellStyle = dataGridViewCellStyle18;
+            this.PanelVisual.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PanelVisual.EnableHeadersVisualStyles = false;
             this.PanelVisual.GridColor = System.Drawing.Color.Black;
-            this.PanelVisual.Location = new System.Drawing.Point(12, 87);
+            this.PanelVisual.Location = new System.Drawing.Point(0, 200);
             this.PanelVisual.MultiSelect = false;
             this.PanelVisual.Name = "PanelVisual";
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PanelVisual.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PanelVisual.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.PanelVisual.RowHeadersVisible = false;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Black;
-            this.PanelVisual.RowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            this.PanelVisual.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.PanelVisual.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
             this.PanelVisual.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(1);
             this.PanelVisual.RowTemplate.Height = 20;
             this.PanelVisual.RowTemplate.ReadOnly = true;
             this.PanelVisual.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.PanelVisual.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.PanelVisual.Size = new System.Drawing.Size(800, 400);
+            this.PanelVisual.Size = new System.Drawing.Size(1000, 300);
             this.PanelVisual.TabIndex = 5;
             this.PanelVisual.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PanelVisual_CellClick);
             // 
@@ -174,26 +148,27 @@
             // 
             this.Nombre.AutoSize = true;
             this.Nombre.Font = new System.Drawing.Font("Mongolian Baiti", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nombre.Location = new System.Drawing.Point(0, 3);
+            this.Nombre.Location = new System.Drawing.Point(12, 9);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(302, 69);
             this.Nombre.TabIndex = 6;
             this.Nombre.Text = "Inventario";
+            this.Nombre.Click += new System.EventHandler(this.Nombre_Click);
             // 
             // Consultar
             // 
             this.Consultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Consultar.Location = new System.Drawing.Point(818, 162);
+            this.Consultar.Location = new System.Drawing.Point(827, 154);
             this.Consultar.Name = "Consultar";
             this.Consultar.Size = new System.Drawing.Size(161, 23);
             this.Consultar.TabIndex = 7;
-            this.Consultar.Text = "Consulta Total";
+            this.Consultar.Text = "Consulta ";
             this.Consultar.UseVisualStyleBackColor = true;
             this.Consultar.Click += new System.EventHandler(this.Consultar_Click);
             // 
             // Buscador
             // 
-            this.Buscador.Location = new System.Drawing.Point(818, 112);
+            this.Buscador.Location = new System.Drawing.Point(827, 128);
             this.Buscador.Name = "Buscador";
             this.Buscador.Size = new System.Drawing.Size(161, 20);
             this.Buscador.TabIndex = 8;
@@ -202,46 +177,98 @@
             // 
             this.Texto.AutoSize = true;
             this.Texto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Texto.Location = new System.Drawing.Point(857, 87);
+            this.Texto.Location = new System.Drawing.Point(871, 107);
             this.Texto.Name = "Texto";
             this.Texto.Size = new System.Drawing.Size(69, 18);
             this.Texto.TabIndex = 9;
             this.Texto.Text = "Consulta";
             // 
-            // comboBox1
+            // textBox6
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(818, 138);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 10;
+            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox6.Location = new System.Drawing.Point(0, 128);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 15;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox3.Location = new System.Drawing.Point(122, 102);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 12;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox5.Location = new System.Drawing.Point(122, 157);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 14;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox1.Location = new System.Drawing.Point(122, 128);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 10;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox4.Location = new System.Drawing.Point(0, 157);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 13;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox2.Location = new System.Drawing.Point(0, 102);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Location = new System.Drawing.Point(237, 154);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Base
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Texto);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.Buscador);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.Consultar);
             this.Controls.Add(this.Nombre);
             this.Controls.Add(this.PanelVisual);
             this.Controls.Add(this.Minimizar);
-            this.Controls.Add(this.Maximo);
-            this.Controls.Add(this.Regreso);
             this.Controls.Add(this.Cerrar);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(2000, 600);
             this.Name = "Base";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Base";
-            this.Load += new System.EventHandler(this.Base_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Base_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Regreso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelVisual)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,14 +279,18 @@
 
         private System.Windows.Forms.PictureBox Cerrar;
         private System.Windows.Forms.PictureBox Minimizar;
-        private System.Windows.Forms.PictureBox Maximo;
-        private System.Windows.Forms.PictureBox Regreso;
         private System.Windows.Forms.DataGridView PanelVisual;
         private System.Windows.Forms.Label Nombre;
         private System.Windows.Forms.Button Consultar;
         private System.Windows.Forms.TextBox Buscador;
         private System.Windows.Forms.Label Texto;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

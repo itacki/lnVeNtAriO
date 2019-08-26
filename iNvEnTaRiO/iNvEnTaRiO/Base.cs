@@ -45,22 +45,18 @@ namespace iNvEnTaRiO
             WindowState = FormWindowState.Minimized;
             
         }
-        private void Maximo_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            Maximo.Visible = false;
-            Regreso.Visible = true;
-        }
-        private void Regreso_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            Maximo.Visible = true;
-            Regreso.Visible = false;
-        }
-
         private void Consultar_Click(object sender, EventArgs e)
         {
-        
+            try
+            {
+                PanelVisual.DataSource = funciones.ejecutable("select * from " + Buscador.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Dato no Valido");
+            }
+           
         }
 
         private void PanelVisual_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -77,9 +73,8 @@ namespace iNvEnTaRiO
             
         }
 
-        private void Base_Load(object sender, EventArgs e)
+        private void Nombre_Click(object sender, EventArgs e)
         {
-  
 
         }
     }
