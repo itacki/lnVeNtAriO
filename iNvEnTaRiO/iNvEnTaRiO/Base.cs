@@ -20,6 +20,7 @@ namespace iNvEnTaRiO
         public Base()
         {
             InitializeComponent();
+            PanelVisual.DataSource = funciones.ejecutable("select Principal.ID,Tipo.TipoNobre,Marca.MarcaNombre,Principal.Serial,Principal.Estado,Principal.Detalles,Principal.Ubicacion from Principal inner join Marca on   Marca.MarcaID = Principal.Marca inner join Tipo on Tipo.TipoID = Principal.Tipo inner join Ubicacion on Ubicacion.UbicacionID = Principal.Ubicacion");
         }
 
         private void Cerrar_Click(object sender, EventArgs e)
@@ -55,6 +56,31 @@ namespace iNvEnTaRiO
             this.WindowState = FormWindowState.Normal;
             Maximo.Visible = true;
             Regreso.Visible = false;
+        }
+
+        private void Consultar_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void PanelVisual_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                Buscador.Text = PanelVisual.CurrentCell.Value.ToString();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("informacion no valida");
+            }
+            
+        }
+
+        private void Base_Load(object sender, EventArgs e)
+        {
+  
+
         }
     }
 }
